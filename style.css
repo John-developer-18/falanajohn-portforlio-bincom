@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #151515;
+    font-family: "Space Grotesk", sans-serif;
+    color:white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: lightgreen;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 8em;
+}
+header h1{
+    font-size: 2rem;
+    cursor: pointer;
+}
+header ul{
+    list-style: none;
+    display: inline-block;
+}
+header li{
+    display: inline-block;
+    margin-left:40px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: white !important;
+}
+header li:hover, header h1:hover{
+     color:lightgreen;
+}
+main{
+    padding: 0 8em;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor:pointer;
+}
+.one h1{
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+.one h1:hover{
+    color: lightgreen;
+}
+.one p:hover{
+    color: lightgreen;
+}
+.one h2{
+    font-size: 1.2rem;
+    margin-top: 40px;
+    cursor: pointer;
+    border-bottom: 2px solid lightgreen;
+    display: inline-block;
+    padding:0.8em 0;
+}
+.one h2:hover{
+    color: lightgreen;
+}
+.html:hover, .css:hover,.js:hover{
+    color:lightgreen;
+}
+.html, .css,.js{
+    cursor: pointer;
+}
+.one p{
+    width: 350px;
+}
+.one img{
+    border-radius: 100%;
+}
+.about{
+    flex-basis: 45%;
+}
+.me{
+    flex-basis: 40%;
+    background-color: #242424;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+.me img{
+    width:100%;
+}
+.me:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+
+.two{
+    display: flex;
+    justify-content: space-between;
+    padding: 10em 0;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.two h1{
+    font-size: 3rem;
+}
+.two p{
+    font-size: 1rem;
+}
+
+.three{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+figure{
+    cursor: pointer;
+}
+figure img{
+    width:100%;
+}
+figcaption{
+    margin-top: 10px;
+    cursor:pointer;
+}
+figcaption:hover{
+    color: lightgreen;
+}
+.project-text{
+    font-size: 1.2rem;
+    margin-top: 40px;
+    cursor: pointer;
+    border-bottom: 2px solid lightgreen;
+    display: inline-block;
+    padding:0.8em 0;
+}
+.project-text:hover{
+    color: lightgreen;
+}
+.projects{
+    flex-basis: 46%;
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 8em;
+    background-color: #242424;
+    margin-top:50px;
+}
+footer h1{
+    font-size: 2rem;
+    cursor: pointer;
+}
+footer ul{
+    list-style: none;
+    display: inline-block;
+}
+footer li{
+    display: inline-block;
+    margin-left:40px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+footer li:hover, footer h1:hover{
+     color:lightgreen;
+}
+
+@media screen and (max-width:1024px) {
+    .one{
+        justify-content: center;
+        text-align: center;
+        padding: 7em 0;
+    }
+    .one h2{
+        margin-bottom: 20px;
+    }
+    .about{
+        flex-basis: 100%;
+    }
+    .about p{
+        width: 100%;
+    }
+    .me{
+        flex-basis: 80%;
+    }
+}
+
+@media screen and (max-width:900px) {
+     .two{
+        text-align: center;
+        flex-direction: column;
+     }
+     .two div{
+        margin-bottom: 5em;
+     }
+     .three{
+        flex-direction: column;
+     }
+}
+
+@media screen and (max-width:540px) {
+     main{
+        padding: 0 4em;
+     }
+     header,footer{
+        padding: 2em 4em;
+     }
+     li{
+        margin-left: 10px !important;
+        font-size: 1.3rem !important;
+     }
+}
+
+@media screen and (max-width:412px) {
+    main{
+        padding: 0 2em;
+     }
+     header,footer{
+        padding: 2em 2em;
+     }
+    .one h1{
+        font-size:3rem;
+    }
+}
